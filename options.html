@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <title>通知</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="jquery-2.2.3.min.js"></script>
+    <script src="notify.min.js"></script>
+    <script src="options.js"></script>
+</head>
+<body>
+<h1>
+    <img src="64.png" alt="Toast">
+    退款新消息通知
+</h1>
+<h2>Options</h2>
+<form id="options">
+    <input id="confirmBtn" type="button" value="保存设置" />
+    <div>
+        请设置您的角色：
+        <div class="bigFont" style="margin-left: 40px;">
+            <label for="none">
+                <input type="radio" id="none" name="role" value="none"/>无.............
+            </label>
+            <br>
+            <label for="finance">
+                <input type="radio" id="finance" name="role" value="finance"/>财务..........
+            </label>
+            <br>
+            <label for="warehouse">
+                <input type="radio" id="warehouse" name="role" value="warehouse"/>仓库..........
+            </label>
+            <br>
+            <label for="customerService">
+                <input type="radio" id="customerService" name="role" value="customerService"/>客服..........
+            </label>
+            <br>
+            <label for="zmdCustomerService">
+                <input type="radio" id="zmdCustomerService" name="role" value="zmdCustomerService"/>自贸达客服
+            </label>
+            <br>
+            <label for="shopManager">
+                <input type="radio" id="shopManager" name="role" value="shopManager"/>店长..........
+            </label>
+        </div>
+    </div>
+    <div>
+        请设置刷新频率：
+        <select id="frequency">
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="30">30</option>
+            <option value="60">60</option>
+        </select>
+    </div>
+</form>
+</body>
+</html>
